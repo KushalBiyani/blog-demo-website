@@ -1,14 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './App';                           // importing app to render it
+import { BrowserRouter} from 'react-router-dom';   //using to route to specific web pages
 import reportWebVitals from './reportWebVitals';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import './i18n';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  <BrowserRouter>
+        <App />
+    </BrowserRouter>, 
+  document.getElementById('root')               //specifing the element to target 
 );
 
 // If you want to start measuring performance in your app, pass a function

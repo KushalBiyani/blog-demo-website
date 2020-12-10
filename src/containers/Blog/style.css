@@ -1,0 +1,43 @@
+.bcontainer1{
+    padding-top: 20px;
+    width: 75%!important;
+    margin: auto;
+    text-align: center;
+}
+.bcard{
+    border: none !important;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  padding: 10px;
+  margin: 30px 0px;
+ height: auto;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+.h2{
+    font-size: 40px!important;
+    color: #2b2525 !important;
+    padding: 30px;
+
+}
+.row1{
+    padding: 20px;
+
+}
+.comment-block{
+    padding-top: 30px;
+}
+
+.comments{
+    text-align: left !important;
+    padding-top: 30px;
+}
+.blog{
+    width: 70%;
+    margin: auto;
+}
+.text-right{
+    text-align: right !important;
+}

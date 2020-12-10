@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import {Route, Switch } from 'react-router-dom';
+import Home from './containers/Home';  //to import the home page
+import Blog from './containers/Blog';  //to import the blog page
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+             <Switch>                      
+             {/*  using Switch and route to render differnt page according to url */ }
+            <Route path="/" exact component={Home} />
+            <Route path="/blog/:blogId/:userId" component={Blog} />
+            </Switch>
+        </main>
   );
 }
 
